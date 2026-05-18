@@ -406,26 +406,6 @@
 
 </body>
 </html>
-    /* ANIMATIONS */
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(28px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
-    .reveal {
-      opacity: 0;
-      transform: translateY(28px);
-      transition: opacity 0.7s ease, transform 0.7s ease;
-    }
-    .reveal.visible { opacity: 1; transform: translateY(0); }
-
-    /* RESPONSIVE */
-    @media (max-width: 768px) {
-      nav { padding: 12px 20px; }
-      nav ul { display: none; }
-      .about-grid, .contact-grid, .schedule-wrap { grid-template-columns: 1fr; gap: 36px; }
-      .service-block, .service-block:nth-child(even) { grid-template-columns: 1fr; direction: ltr; }
-      .form-row { grid-template-columns: 1fr; }
-    }
   </style>
 </head>
 <body>
