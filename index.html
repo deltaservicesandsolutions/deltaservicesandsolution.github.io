@@ -566,68 +566,91 @@
           <div class="contact-detail"><div class="icon">✉️</div><span>deltaservicesandsolutions@gmail.com</span></div>
         </div>
         <div class="form-panel">
-          <h3>Send Us a Message</h3>
-          <div class="form-row">
-            <div class="form-group"><label>First Name</label><input type="text" placeholder="John" /></div>
-            <div class="form-group"><label>Last Name</label><input type="text" placeholder="Doe" /></div>
-          </div>
-          <div class="form-group"><label>Your Email *</label><input type="email" placeholder="john@example.com" required /></div>
-          <div class="form-group"><label>Phone Number</label><input type="tel" placeholder="(000) 000-0000" /></div>
-          <div class="form-group"><label>Message</label><textarea placeholder="Tell us how we can help you..."></textarea></div>
-          <button class="btn-primary" style="width:100%;font-size:0.88rem;animation:none;">Send Message</button>
-        </div>
-      </div>
-    </div>
-  </section>
+  <h3>Send Us a Message</h3>
 
-  <!-- SCHEDULE -->
-  <section id="schedule">
-    <div class="container">
-      <div class="schedule-wrap">
-        <div class="schedule-text reveal">
-          <p class="section-label">Book a Visit</p>
-          <h2 class="section-title">Schedule <span>a Visit</span></h2>
-          <div class="divider"></div>
-          <p>Ready to see what Delta Services and Solutions can do for you in person? Book a visit at your convenience and let our team come to you.</p>
-          <ul class="schedule-perks">
-            <li>Free initial consultation</li>
-            <li>Flexible scheduling — mornings, evenings &amp; weekends</li>
-            <li>No obligation quote provided on-site</li>
-            <li>Prompt, professional service every time</li>
-          </ul>
-        </div>
-        <div class="form-panel reveal">
-          <h3>Book Your Visit</h3>
-          <div class="form-group"><label>Full Name</label><input type="text" placeholder="John Doe" /></div>
-          <div class="form-group"><label>Your Email *</label><input type="email" placeholder="john@example.com" required /></div>
-          <div class="form-group"><label>Phone Number</label><input type="tel" placeholder="(000) 000-0000" /></div>
-          <div class="form-group">
-            <label>Service Interested In</label>
-            <select>
-              <option value="">Select a service...</option>
-              <option>Hood Cleaning</option>
-              <option>HVAC Cleaning</option>
-              <option>Commercial Cleaning</option>
-              <option>Other / Not Sure</option>
-            </select>
-          </div>
-          <div class="form-row">
-            <div class="form-group"><label>Preferred Date</label><input type="date" /></div>
-            <div class="form-group">
-              <label>Preferred Time</label>
-              <select>
-                <option>Morning (8am–12pm)</option>
-                <option>Afternoon (12pm–5pm)</option>
-                <option>Evening (5pm–8pm)</option>
-              </select>
-            </div>
-          </div>
-          <div class="form-group"><label>Additional Notes</label><textarea placeholder="Any details we should know before the visit..."></textarea></div>
-          <button class="btn-primary" style="width:100%;font-size:0.88rem;animation:none;">Book My Visit</button>
-        </div>
+  <form
+    action="https://formspree.io/f/xeelyweo"
+    method="POST"
+  >
+    <div class="form-row">
+
+      <div class="form-group">
+        <label>First Name</label>
+        <input
+          type="text"
+          name="firstName"
+          placeholder="John"
+          required
+        />
       </div>
+
+      <div class="form-group">
+        <label>Last Name</label>
+        <input
+          type="text"
+          name="lastName"
+          placeholder="Doe"
+          required
+        />
+      </div>
+
     </div>
-  </section>
+
+    <div class="form-group">
+      <label>Your Email *</label>
+      <input
+        type="email"
+        name="email"
+        placeholder="john@example.com"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label>Phone Number</label>
+      <input
+        type="tel"
+        name="phone"
+        placeholder="(000) 000-0000"
+      />
+    </div>
+
+    <div class="form-group">
+      <label>Message</label>
+      <textarea
+        name="message"
+        placeholder="Tell us how we can help you..."
+        required
+      ></textarea>
+    </div>
+
+    <!-- Optional Subject Line -->
+    <input
+      type="hidden"
+      name="_subject"
+      value="New Delta Services Inquiry"
+    />
+
+    <!-- Optional redirect after submit -->
+    <!-- Replace with your actual website URL -->
+    <!--
+    <input
+      type="hidden"
+      name="_next"
+      value="https://yourwebsite.com/thank-you.html"
+    />
+    -->
+
+    <button
+      type="submit"
+      class="btn-primary"
+      style="width:100%;font-size:0.88rem;animation:none;"
+    >
+      Send Message
+    </button>
+
+  </form>
+</div>
 
   <!-- FOOTER -->
   <footer>
